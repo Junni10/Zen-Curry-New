@@ -1,0 +1,433 @@
+/* Zen Curry Express - Responsive Styles */
+
+/* Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Arvo:ital,wght@0,400;0,700;1,400;1,700&family=Chango&family=Charis+SIL:ital,wght@0,400;0,700;1,400;1,700&family=Cormorant:ital,wght@0,300..700;1,300..700&family=Crimson+Text:ital,wght@0,400;0,600;0,700;1,400;1,600;1,700&family=Lobster+Two:ital,wght@0,400;0,700;1,400;1,700&family=Saira+Condensed:wght@100;200;300;400;500;600;700;800;900&family=Sancreek&family=Solway:wght@300;400;500;700;800&display=swap');
+
+/* Global Styles */
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #FFFCE7;
+    margin: 0;
+    padding: 0;
+}
+
+
+/* Header Banner */
+.top-banner {
+    background-color: #FFAE59;
+    text-align: center;
+    color: #FFFCE7;
+    font-size: 14px;
+    padding: 8px;
+    margin: 0;
+    font-family: "Solway", serif;
+}
+
+@media (min-width: 768px) {
+    .top-banner {
+        font-size: 16px;
+        padding: 10px;
+    }
+}
+
+/* Awning */
+
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+.img-base {
+  display: block;
+}
+
+
+@media (min-width: 768px) {
+    /* Tablet */
+    .img-overlay {
+        position: absolute;
+  top: 50;
+  left: 50;
+  transform: translate(450%, -139%);
+  width: 10%;   /* optional: make overlay match base */
+  height: 10%;  /* optional */
+  pointer-events: none; /* makes clicks go through */}
+
+}
+
+@media (min-width: 1024px) {
+    /* Desktop */
+    .img-overlay {
+  position: absolute;
+  top: 55;
+  left: 50;
+  transform: translate(450%, -135%);
+  width: 10%;   /* optional: make overlay match base */
+  pointer-events: none; /* makes clicks go through */}
+}
+
+
+/* Navigation */
+nav {
+    margin: 0;
+    padding: 0;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 10px 0;
+    overflow: hidden;
+    font-family: "Solway", serif;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: left;
+    background-color: transparent;
+}
+
+nav ul li {
+    float: none;
+    margin: 5px;
+}
+
+nav ul li a {
+    display: block;
+    color: #707070;
+    text-align: center;
+    padding: 10px 16px;
+    text-decoration: none;
+    font-size: 14px;
+    
+}
+
+
+@media (min-width: 768px) {
+    nav ul li a {
+        padding: 14px 20px;
+        font-size: 16px;
+    }
+}
+
+nav ul li a:hover {
+    color: #E39D51;
+    text-decoration: none;
+}
+
+nav ul li img {
+    max-width: 50px;
+    text-align: right;
+}
+
+.rounded-button {
+  background-color: #FFAD59;
+  border: none;
+  color: #FFFCE7;
+  padding: 10px 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  border-radius: 20px; /* Rounded corners */
+}
+
+.rounded-button:hover {
+  background-color: #FFFCE7;
+  border: 3px solid #FFAD59;
+  color: #FFAD59;
+  padding: 10px 20px;
+  text-align: center;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  border-radius: 20px; /* Rounded corners */
+}
+
+/* Carousel */
+.carousel {
+    margin: 0px;
+}
+
+.carousel-inner img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+
+@media (min-width: 768px) {
+    .carousel-inner img {
+        max-height: 500px;
+    }
+}
+
+@media (min-width: 1024px) {
+    .carousel-inner img {
+        max-height: 600px;
+    }
+}
+
+.carousel-indicators {
+    bottom: -5px;
+}
+
+.carousel-indicators li {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: rgba(255, 255, 255, 0.5);
+}
+
+.carousel-indicators .active {
+    background-color: rgba(0, 0, 0, 0.3);
+}
+
+/* Carousel Arrow Styling */
+.carousel-control-prev,
+.carousel-control-next {
+    width: 5%;
+    opacity: .5;
+
+}
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+    width: 30px;
+    height: 70px;
+    background-color: rgba(0, 0, 0, 0.3);
+    border-radius: 15%;
+    padding: 8px;
+}
+
+@media (min-width: 768px) {
+    .carousel-control-prev-icon,
+    .carousel-control-next-icon {
+        width: 20px;
+        height: 40px;
+        padding: 10px;
+    }
+}
+
+/* Image Slider Placeholder */
+.slider-container {
+    width: 100%;
+    max-width: 1200px;
+    margin: 20px auto;
+    background-color: #f0f0f0;
+    padding: 20px;
+    text-align: center;
+}
+
+/* Two Column Section */
+.responsive-two-columns {
+    display: flex;
+    flex-wrap: wrap;
+    background-color: #FFAD59;
+    margin: 20px 0;
+    align-items: center;
+}
+
+.responsive-two-columns > * {
+    width: 100%;
+    padding: 20px;
+    font-family: "Solway", serif;
+    color: #FFFCE7;
+    font-size: 16px;
+    line-height: 1.6;
+}
+
+@media (min-width: 768px) {
+    .responsive-two-columns > * {
+        width: 50%;
+        padding: 30px;
+        font-size: 20px;
+    }
+}
+
+@media (min-width: 1024px) {
+    .responsive-two-columns > * {
+        font-size: 24px;
+    }
+}
+
+#intro img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+/* Section Headings */
+h2 {
+    margin: 30px 0 20px;
+    font-family: "Chango", cursive;
+    color: #FFAD59;
+    text-align: left;
+    font-size: 24px;
+    padding: 0 15px;
+}
+
+@media (min-width: 768px) {
+    h2 {
+        font-size: 32px;
+        margin: 40px 0 25px;
+    }
+}
+
+/* What We Serve Section */
+#What-we-serve {
+    margin-bottom: 30px;
+}
+
+#What-we-serve .container {
+    padding: 0 15px;
+}
+
+#What-we-serve img {
+    width: 100%;
+    height: auto;
+    margin-bottom: 15px;
+}
+
+@media (max-width: 767px) {
+    #What-we-serve .col-sm-4 {
+        margin-bottom: 20px;
+    }
+}
+
+/* Reviews Section */
+.Reviews {
+    margin: 30px 20px;
+}
+
+@media (min-width: 768px) {
+    /* Tablet */
+    .Reviews {
+        padding: 0px 60px;
+        height: 450px;
+        max-width: 900px;
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: auto; /* More space on tablet */
+    }
+}
+
+@media (min-width: 1024px) {
+    /* Desktop */
+    .Reviews {
+        padding: 0px 40px;
+        margin: 0px auto 160px auto; /* Added bottom margin */
+        height: 320px;
+        max-width: 1400px;
+    }
+}
+
+
+/* Video Container */
+.video-container {
+    position: relative;
+    width: 100%;
+    max-width: 800px;
+    padding: 0px;
+    margin-bottom: 40px; /* Add space below video */
+}
+
+.video-container {
+    /* Mobile (default) */
+    padding: 0px 0px;
+    margin: 10px 0 100px 0; /* Added bottom margin */
+    height: 200px;
+}
+
+@media (min-width: 768px) {
+    /* Tablet */
+    .video-container {
+        padding: 0px 60px;
+        height: 400px;
+        max-width: 900px;
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: auto; /* More space on tablet */
+    }
+}
+
+@media (min-width: 1024px) {
+    /* Desktop */
+    .video-container {
+        padding: 0px 40px;
+        margin: 0px auto 160px auto; /* Added bottom margin */
+        height: 600px;
+        max-width: 1400px;
+    }
+}
+
+
+.video-wrapper {
+    position: relative;
+    padding-bottom: 56.25%;
+    height: 0;
+    overflow: hidden;
+}
+
+.video-wrapper iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border: none;
+}
+
+
+/* Instagram Section */
+.Instagram {
+    margin: 20px 15px;
+}
+
+@media (min-width: 768px) {
+    /* Tablet */
+    .Instagram {
+        padding: 0px 60px;
+        height: 330px;
+        max-width: 900px;
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: auto; /* More space on tablet */
+    }
+}
+
+@media (min-width: 1024px) {
+    /* Desktop */
+    .Instagram {
+        padding: 0px 40px;
+        margin: 10px auto 0px auto; /* Added bottom margin */
+        height: 430px;
+        max-width: 1400px;
+    }
+}
+
+
+/* Footer */
+footer {
+    background-color: #FFAE59;
+    padding: 20px 15px;
+    margin-top: 30px;
+}
+
+footer p {
+    font-family: "Solway", serif;
+    color: #FFFCE7;
+    text-align: center;
+    margin: 8px 0;
+    padding: 5px;
+    background-color: transparent;
+    font-size: 14px;
+}
+
+@media (min-width: 768px) {
+    footer p {
+        font-size: 16px;
+    }
+}
